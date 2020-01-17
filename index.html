@@ -6,31 +6,30 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body onload="moveRelogio()">
-<section id="section_global">
-    <section>
+    <div id="div_global">
+        <section>
+            
         
-        <div>
+            <div id="form_relogio">
                 <p>RELÓGIO DIGITAL</p>
-            <form name="form_relogio">
                 <strong>H:</strong><spam class="in" id="hora" ></spam>
                 <strong>M:</strong><spam class="in" id="minutos" ></spam>
                 <strong>S:</strong><spam class="in" id="segundos" ></spam>
-            </form>
-        </div>
-   
-        <div>
-                <p>DIGITE AQUI O HORARIO DESEJADO PARA ALARME:</p>
+            </div>
                 
-                <strong>H:</strong><input type="number" name="definir_h" id="inH">
-                <strong>M:</strong><input type="number" name="definir_m" id="inM">
+            <div id="input_relogio">
+                <p>DIGITE AQUI O HORARIO DESEJADO PARA ALARME:</p>
+                <strong>H:</strong><input type="number" name="definir_h" id="inH" class="input_relogio">
+                <strong>M:</strong><input type="number" name="definir_m" id="inM" class="input_relogio">
+            </div>
             
-        </div>
-        <div>
-            <input type="button" value="Definir" id="def" onclick="defin()">
-        </div>
-        <div id="res"></div>
-    </section>
-</section>
+            <div>
+                <input type="button" value="Definir" id="def" onclick="defin()">
+            </div>
+        </section>
+    </div>
+    
     <script src="script.js"></script>
+
 </body>
 </html>
