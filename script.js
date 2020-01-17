@@ -5,26 +5,26 @@ function moveRelogio(){
     let minutos = data.getMinutes()
     let segundos = data.getSeconds()
     
-            str_segundos = new String(segundos)
-            if(str_segundos < 10){
-                segundos = "0" + segundos
-            }
-            str_minutos = new String(minutos)
-            if(str_minutos < 10 ){
-                minutos = "0" + minutos
-            }
-            str_hora = new String(hora)
-            if(str_hora < 10){
-                hora = "0" + hora
-            }    
-            relogio_h = `${hora}`
-            relogio_m = `${minutos}`
-            relogio_s = `${segundos}`
+    str_segundos = new String(segundos)
+    if(str_segundos < 10){
+        segundos = "0" + segundos
+    }
+    str_minutos = new String(minutos)
+    if(str_minutos < 10 ){
+        minutos = "0" + minutos
+    }
+    str_hora = new String(hora)
+    if(str_hora < 10){
+        hora = "0" + hora
+    }    
+    relogio_h = `${hora}`
+    relogio_m = `${minutos}`
+    relogio_s = `${segundos}`
 
-            document.form_relogio.relogio_h.value = relogio_h
-            document.form_relogio.relogio_m.value = relogio_m
-            document.form_relogio.relogio_s.value = relogio_s
-            setTimeout("moveRelogio()", 1000)
+    document.form_relogio.relogio_h.value = relogio_h
+    document.form_relogio.relogio_m.value = relogio_m
+    document.form_relogio.relogio_s.value = relogio_s
+    setTimeout("moveRelogio()", 1000)
         
 }
 
