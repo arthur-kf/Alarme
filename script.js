@@ -30,26 +30,19 @@ function moveRelogio(){
 
 //Função para definir o horario do despertador//
 function defin(){
+    
     let hora = Number(document.getElementById("inH").value)
     let minuto = Number(document.getElementById("inM").value)
-    let segundos = Number(document.getElementById("inS").value)
-    
-    let data = new Date()
-    let horaSys = data.getHours()
-    let minutosSys = data.getMinutes()
-    let segundosSys = data.getSeconds()
-    
-    while(hora == horaSys){
-        window.alert("agora ta funcionando")
-        hora += 1
-    }
-    while(minuto == minutosSys){
-        window.alert("agora ta funcionando")
-        minuto += 1
-    }
-    while(segundos == segundosSys){
-        window.alert("agora ta funcionando")
-        segundos += 1
-    }
+    // let segundos = Number(document.getElementById("inS").value)
 
+    setInterval(function() {
+        let data = new Date()
+        let horaSys = data.getHours()
+        let minutosSys = data.getMinutes()
+        let segundosSys = data.getSeconds()
+        
+        if (hora == horaSys && minuto == minutosSys && segundosSys == 0) {
+            alert("Alarme Disparado!")
+        }
+    }, 1000)
 }
