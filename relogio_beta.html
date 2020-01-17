@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Relógio Digital</title>
+    <link rel="stylesheet" href="style 3.css">
+</head>
+<body onload="moveRelogio()">
+<section id="section_global">
+    <section>
+        
+        <div>
+                <p>RELÓGIO DIGITAL</p>
+            <form name="form_relogio">
+                <strong>H:</strong><input type="number" name="relogio_h" id="in" >
+                <strong>M:</strong><input type="number" name="relogio_m" id="in" >
+                <strong>S:</strong><input type="number" name="relogio_s" id="in" >
+            </form>
+        </div>
+   
+        <div>
+                <p>DIGITE AQUI O HORARIO DESEJADO PARA ALARME:</p>
+                
+                <strong>H:</strong><input type="number" name="definir_h" id="inH">
+                <strong>M:</strong><input type="number" name="definir_m" id="inM">
+                <strong>S:</strong><input type="number" name="definir_s" id="inS">
+            
+        </div>
+        <div>
+            <input type="button" value="Definir" id="def" onclick="defin()">
+        </div>
+        <div id="res">
+            
+        </div>
+    </section>
+</section>
+    <script src="index 3.js"></script>
+</body>
+</html>

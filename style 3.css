@@ -1,0 +1,28 @@
+body {
+    text-align: center;
+    background: rgb(20, 13, 43);
+    font: normal 15pt Arial;
+    color: white;
+}
+
+#in{
+    text-align: center;
+    background: rgba(0, 0, 0, 0.473);
+    color: white;
+    padding: 25px;
+    border-radius: 15px;
+}
+
+div{
+    padding: 25px;
+}
+
+#section_global{
+    background: rgba(255, 255, 255, 0.349);
+    border-radius: 50px;
+}
+
+p {
+    width: auto;
+    height: 50px;
+}
