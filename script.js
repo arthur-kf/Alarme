@@ -5,25 +5,25 @@ function moveRelogio(){
     let minutos = data.getMinutes()
     let segundos = data.getSeconds()
     
-    str_segundos = new String(segundos)
+    str_segundos = String(segundos)
     if(str_segundos < 10){
         segundos = "0" + segundos
     }
-    str_minutos = new String(minutos)
+    
+    str_minutos = String(minutos)
     if(str_minutos < 10 ){
         minutos = "0" + minutos
     }
-    str_hora = new String(hora)
+    
+    str_hora = String(hora)
     if(str_hora < 10){
         hora = "0" + hora
-    }    
-    relogio_h = `${hora}`
-    relogio_m = `${minutos}`
-    relogio_s = `${segundos}`
+    }
 
-    document.form_relogio.relogio_h.value = relogio_h
-    document.form_relogio.relogio_m.value = relogio_m
-    document.form_relogio.relogio_s.value = relogio_s
+    document.getElementById("hora").innerHTML = hora
+    document.getElementById("minutos").innerHTML = minutos
+    document.getElementById("segundos").innerHTML = segundos
+    
     setTimeout("moveRelogio()", 1000)
         
 }
@@ -33,7 +33,6 @@ function defin(){
     
     let hora = Number(document.getElementById("inH").value)
     let minuto = Number(document.getElementById("inM").value)
-    // let segundos = Number(document.getElementById("inS").value)
 
     setInterval(function() {
         let data = new Date()
