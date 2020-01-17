@@ -29,41 +29,27 @@ function moveRelogio(){
 }
 
 //Função para definir o horario do despertador//
-        function defin(){
-        let h = document.getElementById("inH")
-        let h_v = Number(h.value)
-
-        let m = document.getElementById("inM")
-        let m_v = Number(m.value)
-
-        let s = document.getElementById("inS")
-        let s_v = Number(s.value)
-
-        let res = document.getElementById("res")
-        
-        let data2 = new Date()
-        let hora2 = data2.getHours()
-        let minutos2 = data2.getMinutes()
-        let segundos2 = data2.getSeconds()
-        
-        let hora2_v = Number(hora2.value)
-        let minutos2_v = Number(minutos2.value)
-        let segundos2_v = Number(segundos2.value)
-        
-        while(h_v.value == hora2_v.value ){
-            
-            window.alert("agora ta funcionando")
-            h_v += 1
-        }
-        while(m_v.value == minutos2_v.value ){
-            
-            window.alert("agora ta funcionando")
-            m_v += 1
-        }
-        while(s_v.value == segundos2_v.value ){
-            
-            window.alert("agora ta funcionando")
-            s_v += 1
-        }
+function defin(){
+    let hora = Number(document.getElementById("inH").value)
+    let minuto = Number(document.getElementById("inM").value)
+    let segundos = Number(document.getElementById("inS").value)
+    
+    let data = new Date()
+    let horaSys = data.getHours()
+    let minutosSys = data.getMinutes()
+    let segundosSys = data.getSeconds()
+    
+    while(hora == horaSys){
+        window.alert("agora ta funcionando")
+        hora += 1
+    }
+    while(minuto == minutosSys){
+        window.alert("agora ta funcionando")
+        minuto += 1
+    }
+    while(segundos == segundosSys){
+        window.alert("agora ta funcionando")
+        segundos += 1
+    }
 
 }
