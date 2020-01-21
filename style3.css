@@ -1,0 +1,55 @@
+body {
+    text-align: center;
+    background: rgb(20, 13, 43);
+    font: normal 15pt Arial;
+    color: white;
+    margin: 150px;
+}
+
+#in{
+    text-align: center;
+    background: rgba(0, 0, 0, 0.473);
+    color: white;
+    padding: 25px;
+    width: 40px;
+    border-radius: 15px;
+}
+
+div{
+    padding: 25px;
+}
+
+#section_global{
+    background: rgba(255, 255, 255, 0.349);
+    border-radius: 50px;
+}
+
+p {
+    width: auto;
+    height: 50px;
+}
+
+#def {
+    background: #ffffff;
+    border: none;
+    border-radius: 8px;
+    height: 40px;
+    width: 70px;
+    color: black;
+    transition: .2s;
+
+}
+#def:hover{
+    background: rgba(0, 0, 0, 0.473);
+    color: white;
+    cursor: pointer;
+}
+
+.put{
+    border-radius: 8px;
+    height: 40px;
+    width: 150px;
+    background: rgba(0, 0, 0, 0.473);
+    color: white;
+    text-align: center;
+}
