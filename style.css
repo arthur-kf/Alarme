@@ -1,45 +1,46 @@
 body {
+    
+    /*manter todo conteudo da página centralisado sem a necessidade de gambiarras*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+
     text-align: center;
     background: rgb(20, 13, 43);
     font: normal 15pt Arial;
     color: white;
-    margin: 150px;
 }
 
-#in{
+.in{
     text-align: center;
     background: rgba(0, 0, 0, 0.473);
     color: white;
-    padding: 25px;
-    width: 40px;
+    padding: 15px;
+    width: 30px;
     border-radius: 15px;
 }
 
 div{
-    padding: 25px;
+    padding: 5px;
 }
 
 #section_global{
     background: rgba(255, 255, 255, 0.349);
     border-radius: 50px;
+    padding: 10px;
 }
 
-p {
-    width: auto;
-    height: 50px;
-}
-
-#def {
+.def {
     background: #ffffff;
     border: none;
     border-radius: 8px;
-    height: 40px;
-    width: 70px;
+    padding: 10px;
     color: black;
     transition: .2s;
 
 }
-#def:hover{
+.def:hover{
     background: rgba(0, 0, 0, 0.473);
     color: white;
     cursor: pointer;
