@@ -39,6 +39,7 @@ function defin(){
     // Este "if" veifica se o Horario declarado é valido.
     if(hora < 1 || hora > 24 || minuto < 0 || minuto > 60){
         alert("Horário Invalido! ")
+        res.innerHTML = ""
 
     }
     else {
@@ -52,8 +53,12 @@ function defin(){
                 audio.play()  
             }
         }, 1000)
-
-        res.innerHTML = `Horário Definido para ${hora}:${minuto}`
+        
+        if(minuto < 10){
+            res.innerHTML = `Horário Definido para ${hora}:0${minuto}`
+        }else{
+            res.innerHTML = `Horário Definido para ${hora}:${minuto}`
+        }
     }
 }  
 

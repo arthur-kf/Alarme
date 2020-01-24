@@ -10,19 +10,22 @@ body {
     background: rgb(20, 13, 43);
     font: normal 15pt Arial;
     color: white;
+
+    animation-name: fade;
+    animation-duration: 0.9s;
 }
 
 .in{
     text-align: center;
     background: rgba(0, 0, 0, 0.473);
     color: white;
-    padding: 15px;
+    padding: 20px;
     width: 30px;
     border-radius: 15px;
 }
 
 div{
-    padding: 5px;
+    padding: 20px;
 }
 
 #section_global{
@@ -54,3 +57,16 @@ div{
     color: white;
     text-align: center;
 }
+
+  
+  @keyframes fade {
+    from {
+      opacity: 0;
+
+    }
+    to {
+      opacity: 1;
+
+    }
+  }
+  

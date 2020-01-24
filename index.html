@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,16 +10,17 @@
 <body onload="moveRelogio()">
 <section id="section_global">
     <section>
-        
         <div>
-            <p>RELÓGIO DIGITAL</p>
-            <strong>H:</strong><spam type="text" id="relogio_h" class="in" onfocus="window.document.form_relogio.relogio_h.blur()"></spam>
-            <strong>M:</strong><spam type="text" id="relogio_m" class="in" onfocus="window.document.form_relogio.relogio_m.blur()"></spam>
-            <strong>S:</strong><spam type="text" id="relogio_s" class="in" onfocus="window.document.form_relogio.relogio_s.blur()"></spam>
+            <h1>RELÓGIO DIGITAL</h1>
+        </div>
+        <div>
+            <strong>H:</strong><spam type="text" id="relogio_h" class="in" ></spam>
+            <strong>M:</strong><spam type="text" id="relogio_m" class="in" ></spam>
+            <strong>S:</strong><spam type="text" id="relogio_s" class="in" ></spam>
         </div>
    
         <div>
-                <p>DIGITE AQUI O HORARIO DESEJADO PARA ALARME:</p>
+                <h1>DIGITE AQUI O HORARIO DESEJADO PARA ALARME:</h1>
                 
                 <strong>H:</strong><input type="number" name="definir_h" id="inH" class="put">
                 <strong>M:</strong><input type="number" name="definir_m" id="inM" class="put">   
@@ -33,7 +34,6 @@
         <div id="res"></div>
 
         <div>
-            <!--<img src="icon2.png" alt="Desativar" onclick="desativar()">-->
             <audio id="audio" src="audio.mp3"></audio>
         </div>
     </section>
