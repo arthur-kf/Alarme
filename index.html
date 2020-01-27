@@ -10,20 +10,23 @@
 <body onload="moveRelogio()">
 <section id="section_global">
     <section>
+        
         <div>
             <h1>RELÓGIO DIGITAL</h1>
         </div>
+        
         <div>
-            <strong>H:</strong><spam type="text" id="relogio_h" class="in" ></spam>
-            <strong>M:</strong><spam type="text" id="relogio_m" class="in" ></spam>
-            <strong>S:</strong><spam type="text" id="relogio_s" class="in" ></spam>
+            <spam type="text" id="relogio_h" class="in" ></spam> <spam class="strong">:</spam>
+            <spam type="text" id="relogio_m" class="in" ></spam> <spam class="strong">:</spam>
+            <spam type="text" id="relogio_s" class="in" ></spam>
         </div>
    
         <div>
                 <h1>DIGITE AQUI O HORARIO DESEJADO PARA ALARME:</h1>
                 
-                <strong>H:</strong><input type="number" name="definir_h" id="inH" class="put">
-                <strong>M:</strong><input type="number" name="definir_m" id="inM" class="put">   
+                <input type="number" name="definir_h" id="inH" class="put">
+                <spam class="strong">:</spam>
+                <input type="number" name="definir_m" id="inM" class="put">   
         </div>
         
         <div id ="definir">
@@ -32,10 +35,8 @@
         </div>
         
         <div id="res"></div>
-
-        <div>
-            <audio id="audio" src="audio.mp3"></audio>
-        </div>
+        
+        <audio id="audio" src="audio.mp3">
     </section>
 </section>
     <script src="script.js"></script>
