@@ -33,7 +33,7 @@ function defin(){
     
     let hora = Number(document.getElementById("inH").value)
     let minuto = Number(document.getElementById("inM").value)
-    let audio = document.getElementById("audio")
+    const audioAtivar = document.getElementById("ativar")
 
     
     // Este "if" veifica se o Horario declarado é valido.
@@ -50,7 +50,7 @@ function defin(){
             let segundosSys = data.getSeconds()
             
             if (hora == horaSys && minuto == minutosSys && segundosSys == 0) {
-                audio.play()  
+                audioAtivar.play()  
             }
         }, 1000)
         
@@ -63,8 +63,12 @@ function defin(){
 }  
 
 function desativar(){
-    var audio = document.getElementById("audio")
-    audio.pause() 
+    const audioAtivar = document.getElementById("ativar")
+    const audioDesativar =  document.getElementById("desativar")
+    
+    audioAtivar.pause() 
+    audioDesativar.play()
+    
     res.innerHTML = ""
 }
 
