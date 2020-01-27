@@ -1,72 +1,103 @@
+@keyframes fade {
+  from {
+    opacity: 0;
+
+  }
+  to {
+    opacity: 1;
+
+  }
+}
+
 body {
-    
-    /*manter todo conteudo da página centralisado sem a necessidade de gambiarras*/
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 90vh;
+  /*manter todo conteudo da página centralisado sem a necessidade de gambiarras*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
 
-    text-align: center;
-    background: rgb(20, 13, 43);
-    font: normal 15pt Arial;
-    color: white;
+  text-align: center;
+  font: normal 15pt Arial;
+  color: black;
+  
+  background: url('wallpaper.jpg')50% 50% fixed no-repeat;
+  background-size: 100% 100%;
 
-    animation-name: fade;
-    animation-duration: 0.9s;
+  animation: fade /* nome */  1s /* duração */ 0s /* delay ao carregar a página */;
 }
 
 .in{
-    text-align: center;
-    background: rgba(0, 0, 0, 0.473);
-    color: white;
-    padding: 20px;
-    width: 30px;
-    border-radius: 15px;
+  text-align: center;
+  color: black;
+  
+  background: rgb(184, 184, 184);
+  border-radius: 15px;
+  
+  padding: 20px;
+  width: 30px;
 }
 
 div{
-    padding: 20px;
+  padding: 20px;
 }
 
 #section_global{
-    background: rgba(255, 255, 255, 0.349);
-    border-radius: 50px;
-    padding: 10px;
+  background: rgba(221, 221, 221, 0.932);
+  color: black;
+  border-radius: 50px;
+  padding: 10px;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.26);
+  text-align: center;
 }
 
-.def {
-    background: #ffffff;
-    border: none;
-    border-radius: 8px;
-    padding: 10px;
-    color: black;
-    transition: .2s;
-
+#definir{
+  background: rgb(184, 184, 184);
+  margin: auto;
+  width: 170px;
+  padding: 5px;
+  border-radius: 8px;
 }
-.def:hover{
-    background: rgba(0, 0, 0, 0.473);
-    color: white;
-    cursor: pointer;
-}
-
-.put{
-    border-radius: 8px;
-    height: 40px;
-    width: 150px;
-    background: rgba(0, 0, 0, 0.473);
-    color: white;
-    text-align: center;
-}
-
+.actionButtons {
+  background: rgb(184, 184, 184);
   
-  @keyframes fade {
-    from {
-      opacity: 0;
-
-    }
-    to {
-      opacity: 1;
-
-    }
-  }
+  border: none;
+  border-radius: 8px;
   
+  padding: 10px;
+  
+  color: black;
+  
+  transition: .2s;
+
+}
+.actionButtons:hover
+{
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.459);
+  cursor: pointer;
+}
+
+#defButton:hover{
+  background: rgb(110, 255, 129);
+  color: black;
+}
+#desButton:hover{
+  background: rgb(255, 110, 110);
+}
+
+.inputHours{
+  border: none;
+  border-radius: 8px;
+  
+  height: 40px;
+  width: 100px;
+  
+  background: rgb(184, 184, 184);
+  
+  color: black;
+  text-align: center;
+  font-size: large;
+}
+
+.strong {
+  font-weight: bold;
+}

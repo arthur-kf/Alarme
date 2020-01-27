@@ -24,14 +24,14 @@
         <div>
                 <h1>DIGITE AQUI O HORARIO DESEJADO PARA ALARME:</h1>
                 
-                <input type="number" name="definir_h" id="inH" class="put">
+                <input type="number" name="definir_h" id="inH" class="inputHours">
                 <spam class="strong">:</spam>
-                <input type="number" name="definir_m" id="inM" class="put">   
+                <input type="number" name="definir_m" id="inM" class="inputHours">   
         </div>
         
-        <div id ="definir">
-            <input type="button" value="Definir" class="def" onclick="defin()">
-            <input type="button" value="Desativar" class="def" onclick="desativar()">
+        <div id="definir">
+            <input type="button" value="Definir" class="actionButtons" id="defButton" onclick="defin()">
+            <input type="button" value="Desativar" class="actionButtons" id="desButton" onclick="desativar()">
         </div>
         
         <div id="res"></div>
