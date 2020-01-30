@@ -1,14 +1,3 @@
-@keyframes fade {
-  from {
-    opacity: 0;
-
-  }
-  to {
-    opacity: 1;
-
-  }
-}
-
 body {
   /*manter todo conteudo da página centralisado sem a necessidade de gambiarras*/
   display: flex;
@@ -20,21 +9,10 @@ body {
   font: normal 15pt Arial;
   color: black;
   
-  background: url('wallpaper.jpg')50% 50% fixed no-repeat;
+  background: url('../wallpaper.jpg')50% 50% fixed no-repeat;
   background-size: 100% 100%;
 
   animation: fade /* nome */  1s /* duração */ 0s /* delay ao carregar a página */;
-}
-
-.in{
-  text-align: center;
-  color: black;
-  
-  background: rgb(184, 184, 184);
-  border-radius: 15px;
-  
-  padding: 20px;
-  width: 30px;
 }
 
 div{
@@ -57,24 +35,7 @@ div{
   padding: 5px;
   border-radius: 8px;
 }
-.actionButtons {
-  background: rgb(184, 184, 184);
-  
-  border: none;
-  border-radius: 8px;
-  
-  padding: 10px;
-  
-  color: black;
-  
-  transition: .2s;
 
-}
-.actionButtons:hover
-{
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.459);
-  cursor: pointer;
-}
 
 #defButton:hover{
   background: rgb(110, 255, 129);
@@ -82,22 +43,4 @@ div{
 }
 #desButton:hover{
   background: rgb(255, 110, 110);
-}
-
-.inputHours{
-  border: none;
-  border-radius: 8px;
-  
-  height: 40px;
-  width: 100px;
-  
-  background: rgb(184, 184, 184);
-  
-  color: black;
-  text-align: center;
-  font-size: large;
-}
-
-.strong {
-  font-weight: bold;
 }

@@ -71,28 +71,3 @@ function desativar(){
     
     res.innerHTML = ""
 }
-
-
-
-
-
-
-
-/*
-
-Correção de Bugs
-
-
-
-Quando adicionado "0 Horas" ou 0 "Minutos" tem que acrescentar um "0" na frente: 
-Antes da modificação fica assim:            10:0 ou 0:0
-Depois da modificação deve ficar assim:     10:00 ou 00:00
-
-
-"Lipar" o conteudo dos "inputs de definição de horário" para "Vazio" depois que o alarme for disparado.
-
-
-Corgir a função "Desativar" que não cancela o horário definido
-
-
-*/

@@ -2,44 +2,46 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <link rel="stylesheet" href="styles/effects.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/class.css">
+
     <title>Relógio Digital</title>
-    <link rel="stylesheet" href="style.css">
 </head>
 <body onload="moveRelogio()">
-<section id="section_global">
-    <section>
-        
-        <div>
-            <h1>RELÓGIO DIGITAL</h1>
-        </div>
-        
-        <div>
-            <spam type="text" id="relogio_h" class="in" ></spam> <spam class="strong">:</spam>
-            <spam type="text" id="relogio_m" class="in" ></spam> <spam class="strong">:</spam>
-            <spam type="text" id="relogio_s" class="in" ></spam>
-        </div>
-   
-        <div>
-                <h1>DIGITE AQUI O HORARIO DESEJADO PARA ALARME:</h1>
-                
-                <input type="number" name="definir_h" id="inH" class="inputHours">
-                <spam class="strong">:</spam>
-                <input type="number" name="definir_m" id="inM" class="inputHours">   
-        </div>
-        
-        <div id="definir">
-            <input type="button" value="Definir" class="actionButtons" id="defButton" onclick="defin()">
-            <input type="button" value="Desativar" class="actionButtons" id="desButton" onclick="desativar()">
-        </div>
-        
-        <div id="res"></div>
-        
-        <audio id="ativar" src="ativado.mp3">
-        <audio id="desativar" src="desativar.mp3">
+    <section id="section_global">
+        <section>
+            
+            <div>
+                <h1>RELÓGIO DIGITAL</h1>
+            </div>
+            
+            <div>
+                <spam type="text" id="relogio_h" class="in" ></spam> <spam class="strong">:</spam>
+                <spam type="text" id="relogio_m" class="in" ></spam> <spam class="strong">:</spam>
+                <spam type="text" id="relogio_s" class="in" ></spam>
+            </div>
+    
+            <div>
+                    <h1>DIGITE AQUI O HORARIO DESEJADO PARA ALARME:</h1>
+                    
+                    <input type="number" name="definir_h" id="inH" class="inputHours">
+                    <spam class="strong">:</spam>
+                    <input type="number" name="definir_m" id="inM" class="inputHours">   
+            </div>
+            
+            <div id="definir">
+                <input type="button" value="Definir" class="actionButtons" id="defButton" onclick="defin()">
+                <input type="button" value="Desativar" class="actionButtons" id="desButton" onclick="desativar()">
+            </div>
+            
+            <div id="res"></div>
+            
+            <audio id="ativar" src="ativado.mp3">
+            <audio id="desativar" src="desativar.mp3">
+        </section>
     </section>
-</section>
     <script src="script.js"></script>
 </body>
 </html>
