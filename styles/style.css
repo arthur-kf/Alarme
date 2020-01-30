@@ -9,7 +9,7 @@ body {
   font: normal 15pt Arial;
   color: black;
   
-  background: url('../wallpaper.jpg')50% 50% fixed no-repeat;
+  background: url('../img/wallpaper.jpg')50% 50% fixed no-repeat;
   background-size: 100% 100%;
 
   animation: fade /* nome */  1s /* duração */ 0s /* delay ao carregar a página */;
