@@ -29,10 +29,9 @@ div{
 }
 
 #definir{
+  display: inline-block;
   background: rgb(184, 184, 184);
   margin: auto;
-  width: 170px;
-  padding: 5px;
   border-radius: 8px;
 }
 
