@@ -6,17 +6,24 @@
     <link rel="stylesheet" href="styles/effects.css">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/class.css">
+    <style>
+        /* NOSCRIPT */
+        .noscript {
+            display: none;
+        }
+    </style>
 
     <script src="functions/small_functions.js"></script>
 
     <title>Relógio Digital</title>
 </head>
 <body onload="clock()">
-    <noscript>
-        This page needs to run JavaScript.
-    </noscript>
     <section id="section_global">
-        <section>
+        <noscript style="border: 1px red solid;" class="noscript">
+            This page needs to run JavaScript.
+        </noscript>
+        
+        <section class="noscript">
             
             <div>
                 <h1>RELÓGIO DIGITAL</h1>
