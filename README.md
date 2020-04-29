@@ -3,7 +3,7 @@
 # Web Alarme
 [![Site no GitHUb Pages](https://img.shields.io/static/v1?label=Alarme&message=GithubPages&color=black&style=for-the-badge)](https://arthur-kf.github.io/Alarme/)
 
-## _Alarme feito em JS puro_ 
+### _Alarme feito em JS puro_ 
 
 
 <table>
